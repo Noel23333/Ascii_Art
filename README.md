@@ -121,7 +121,7 @@ BRAILLE_CHARS_SORTED = [
 - **作用**：定义一个排序好的盲文 Unicode 字符列表，字符按照“点密度”排序。生成最终盲文画时，会根据图像的光度值映射到对应的字符上。
 - **原理**：图像的光度值经过归一化后映射为区间 [0, 1]，乘以字符列表的长度，得到一个整数索引，从而选出合适的盲文字符表示图像的局部亮度。
 
-### 3. 光度计算：`rgb_to_lightness_numba`
+### 3. 明度计算：`rgb_to_lightness_numba`
 
 ```python
 @numba.jit(nopython=True, fastmath=True, parallel=True)
@@ -143,7 +143,7 @@ def rgb_to_lightness_numba(img_array, use_lab):
     return lightness
 ```
 
-- **功能**：将 RGB 图像转换为光度（亮度）图。
+- **功能**：将 RGB 图像转换为明度（亮度）图。
 
 - **两种模式**：
 
