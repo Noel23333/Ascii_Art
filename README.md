@@ -19,7 +19,7 @@ Ascii_Art/
 │   ├── output_fast.txt
 │   ├── output_fast.txt.html
 │   ├── output_quality.txt
-│   └──  output_quality.txt.html
+│   └── output_quality.txt.html
 │
 ├── Ascii_Art.py
 ├── ASCII_Art_Debug.py
